@@ -52,7 +52,7 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(employeeServive.updateEmployee(employee, id), HttpStatus.OK);
 	}
 	
-	@DeleteMapping("/employees/{id}") //g
+	@DeleteMapping("/employees/{id}") 
 	public ResponseEntity<String> deleteEmployee(@PathVariable("id") long id)
 	{
 		employeeServive.deleteEmployee(id);
